@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20231010 13:19:29.575" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\rgkenlii\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Download orders">
+<var>${orders}</var>
+<msg timestamp="20231010 13:19:30.303" level="FAIL">No keyword with name 'Download orders' found.</msg>
+<status status="FAIL" starttime="20231010 13:19:30.303" endtime="20231010 13:19:30.303"/>
+</kw>
+<for flavor="IN">
+<var>${order_row}</var>
+<value>@{orders}</value>
+<iter>
+<var name="${order_row}"/>
+<kw name="Log" library="BuiltIn">
+<arg>${order_row}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20231010 13:19:30.303" endtime="20231010 13:19:30.303"/>
+</kw>
+<kw name="Open robot order website">
+<status status="NOT RUN" starttime="20231010 13:19:30.303" endtime="20231010 13:19:30.303"/>
+</kw>
+<kw name="Close the modal">
+<status status="NOT RUN" starttime="20231010 13:19:30.303" endtime="20231010 13:19:30.303"/>
+</kw>
+<kw name="Fill the form">
+<arg>${order_row}[Head]</arg>
+<arg>${order_row}[Body]</arg>
+<arg>${order_row}[Legs]</arg>
+<arg>${order_row}[Address]</arg>
+<status status="NOT RUN" starttime="20231010 13:19:30.303" endtime="20231010 13:19:30.303"/>
+</kw>
+<kw name="Store the receipt as PDF file">
+<arg>${order_row}[Order number]</arg>
+<status status="NOT RUN" starttime="20231010 13:19:30.303" endtime="20231010 13:19:30.303"/>
+</kw>
+<kw name="Close Page">
+<status status="NOT RUN" starttime="20231010 13:19:30.303" endtime="20231010 13:19:30.315"/>
+</kw>
+<status status="NOT RUN" starttime="20231010 13:19:30.303" endtime="20231010 13:19:30.315"/>
+</iter>
+<status status="NOT RUN" starttime="20231010 13:19:30.303" endtime="20231010 13:19:30.315"/>
+</for>
+<status status="PASS" starttime="20231010 13:19:29.600" endtime="20231010 13:19:36.662"/>
+</kw>
+<status status="PASS" starttime="20231010 13:19:29.600" endtime="20231010 13:19:36.662"/>
+</test>
+<status status="PASS" starttime="20231010 13:19:29.575" endtime="20231010 13:19:36.663"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
